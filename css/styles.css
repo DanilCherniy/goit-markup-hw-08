@@ -1,0 +1,116 @@
+:root {
+  --primary-text-color: #ffffff;
+  --title-text-color: #212121;
+  --accent: #2196f3;
+  --desciption-color: #757575;
+}
+/*цвет основного текста 
+color: #212121*/
+/* цветвторичного цвета color: #757575;*/
+/* color: #757575*/
+/*акцент color: #2196F3;*/
+
+body {
+  background-color: #ffffff;
+}
+
+.list {
+  list-style: none;
+}
+
+.logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+}
+
+.logo-web {
+  color: #2196f3;
+}
+
+.logo-st {
+  color: #000000;
+}
+
+/* SIte nav*/
+
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent);
+}
+
+.site-nav .link.current {
+  color: var(--accent);
+}
+
+.contacts-nav .link {
+  color: #757575;
+}
+
+.contacts-nav .link:hover,
+.contacts-nav .link:focus {
+  color: var(--accent);
+}
+
+.section-title {
+  color: var(--title-text-color);
+}
+
+.header-title {
+  color: #ffffff;
+}
+
+.features-list .title {
+  color: var(--title-text-color);
+}
+
+.header .link {
+  color: #ffffff;
+}
+
+.button {
+  color: var(--primary-text-color);
+  background-color: var(--accent);
+}
+
+.features-dscrp {
+  color: var(--desciption-color);
+}
+
+.command-title {
+  color: var(--title-text-color);
+}
+
+.command-dscrp {
+  color: var(--desciption-color);
+}
+
+.adress-title {
+  color: var(--primary-text-color);
+}
+
+.contacts {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.join {
+  color: var(--primary-text-color);
+}
+
+.category-title {
+  color: var(--title-text-color);
+}
+
+.examples-title {
+  color: var(--title-text-color);
+}
+
+.examples-dscrp {
+  color: var(--desciption-color);
+}
