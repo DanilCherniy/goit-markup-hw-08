@@ -12,6 +12,7 @@ color: #212121*/
 
 body {
   background-color: #ffffff;
+  font-family: Roboto, sans-serif;
 }
 
 .list {
@@ -35,7 +36,12 @@ body {
 }
 
 /* SIte nav*/
-
+.site-nav {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
 .site-nav .link {
   color: var(--title-text-color);
 }
@@ -47,6 +53,14 @@ body {
 
 .site-nav .link.current {
   color: var(--accent);
+}
+
+.contacts-nav {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .contacts-nav .link {
@@ -64,14 +78,60 @@ body {
 
 .header-title {
   color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .features-list .title {
   color: var(--title-text-color);
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features-dscrp {
+  font-size: 14px;
+  line-height: 1.7;
 }
 
 .header .link {
   color: #ffffff;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 0.86;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.activities-list {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.command-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.command-dscrp {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .button-secondary {
@@ -98,14 +158,32 @@ body {
 
 .adress-title {
   color: var(--primary-text-color);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 
 .contacts {
   color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 
 .join {
   color: var(--primary-text-color);
+  ont-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.join-action {
+  color: var(--primary-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
 }
 
 .category-title {
@@ -114,8 +192,15 @@ body {
 
 .examples-title {
   color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 
 .examples-dscrp {
   color: var(--desciption-color);
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
 }
