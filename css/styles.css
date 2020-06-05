@@ -74,9 +74,14 @@ body {
   color: #ffffff;
 }
 
-.button {
+.button-secondary {
   color: var(--primary-text-color);
   background-color: var(--accent);
+}
+
+.button-primary {
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
 }
 
 .features-dscrp {
