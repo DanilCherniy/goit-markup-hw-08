@@ -207,6 +207,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .join-action {
@@ -215,6 +216,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .category-title {
@@ -244,4 +246,8 @@ body {
 
 .underline {
   text-decoration: none;
+}
+
+.footer {
+  background-color: #2f303a;
 }
