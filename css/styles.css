@@ -155,6 +155,24 @@ body {
   letter-spacing: 0.03em;
 }
 
+.variables {
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.03em;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
 .button {
   font-size: 16px;
   line-height: 1.88;
@@ -250,4 +268,18 @@ body {
 
 .footer {
   background-color: #2f303a;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.adress-title {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
