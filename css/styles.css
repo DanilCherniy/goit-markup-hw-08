@@ -10,13 +10,26 @@ color: #212121*/
 /* color: #757575*/
 /*акцент color: #2196F3;*/
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: #ffffff;
   font-family: Roboto, sans-serif;
+  margin: 0px;
 }
 
 .list {
   list-style: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 .logo {
@@ -26,6 +39,16 @@ body {
   font-size: 26px;
   line-height: 31px;
   text-decoration: none;
+  /*padding-top: 24px;
+  padding-bottom: 25px;
+  padding-left: 215px;*/
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1230px;
+  outline: 2px solid tomato;
 }
 
 .logo-web {
@@ -79,13 +102,25 @@ body {
   color: var(--title-text-color);
 }
 
+.header {
+  text-align: center;
+}
 .header-title {
   color: #ffffff;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.37;
-  text-align: center;
+
   text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 40px;
+
+  min-width: 696px;
+  height: 120px;
+  left: 452px;
+  top: 280px;
+
+  background-color: tomato;
 }
 
 .header .link {
@@ -106,9 +141,19 @@ body {
   text-transform: uppercase;
 }
 
+.title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.img {
+  margin-bottom: 40px;
+}
+
 .features-dscrp {
   font-size: 14px;
   line-height: 1.7;
+  margin-bottom: 94px;
 }
 
 .header .link {
@@ -174,18 +219,38 @@ body {
   letter-spacing: 0.03em;
 }
 .button {
-  font-size: 16px;
-  line-height: 1.88;
 }
 
 .button-secondary {
   color: var(--primary-text-color);
   background-color: var(--accent);
+  font-size: 16px;
+  line-height: 1.88;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  display: inline-block;
+  min-width: 200px;
+
+  border: 1px solid transparent;
 }
 
 .button-primary {
   color: var(--title-text-color);
   background-color: #f5f4fa;
+  font-size: 16px;
+  line-height: 1.88;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  display: inline-block;
+  min-width: 200px;
+  text-align: center;
+  border: 1px solid #f5f4fa;
 }
 
 .features-dscrp {
