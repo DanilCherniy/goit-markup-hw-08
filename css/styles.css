@@ -120,6 +120,30 @@ body {
   margin-left: 30px;
 }
 
+.site-contacts .mail::before {
+  display: inline-block;
+  width: 16px;
+  height: 11px;
+  margin-right: 10px;
+  background-size: cover;
+  background-image: url(../images/mail.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
+
+.site-contacts .phone::before {
+  display: inline-block;
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+  background-size: cover;
+  background-image: url(../images/smartphone.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
+
 .site-contacts .link {
   font-style: normal;
   font-weight: 500;
@@ -371,6 +395,24 @@ body {
   display: flex;
   list-style: none;
 }
+
+/*.section-features .icons {
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;*/
+}
+
+/*
+.section-features .vector::before {
+  display:inline-block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  outline: 1px solid red;
+}*/
 
 .section-features .item + .item {
   margin-left: 30px;
