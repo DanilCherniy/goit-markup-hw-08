@@ -235,6 +235,39 @@ body {
   justify-content: start;
 }
 
+.footer-insta {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
+.footer-twitter {
+  width: 20px;
+  height: 20px;
+  margin-left: 22px;
+  fill: white;
+}
+
+.footer-facebook {
+  width: 20px;
+  height: 20px;
+  margin-left: 22px;
+  fill: white;
+}
+
+.footer-linkedin {
+  width: 20px;
+  height: 20px;
+  margin-left: 22px;
+  fill: white;
+}
+
+.icon-send {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
 .footer.social-links .social-item:not(:first-child) {
   margin-left: 10px;
 }
@@ -396,31 +429,43 @@ body {
   list-style: none;
 }
 
-/*.vector::before {
- 
-  width: 270px;
-  height: 120px;
+.antena {
+  width: 65px;
+  height: 70px;
   background: #f5f4fa;
   border-radius: 4px;
+}
+
+.diagram {
+  width: 65px;
+  height: 70px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.clock {
+  width: 65px;
+  height: 70px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.astronaut {
+  width: 65px;
+  height: 70px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+/*.section-features .item::before {
+  display: inline-block;
+  content: "";*/
+
+/*.section-features .item:nth-child(1)::before {
+  background-image: url(../images/Vector.png);
 }*/
 
-.section-features .item::before {
-  display: inline-block;
-  content: "";
-  width: 270px;
-  height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
-  outline: 1px solid red;
-}
-
-.section-features .item:nth-child(1)::before {
-  background-image: url(../images/Vector.png);
-}
-
-.section-features .item:nth-child(2)::before {
+/*.section-features .item:nth-child(2)::before {
   background-image: url(../images/Vector2.png);
 }
 
@@ -430,7 +475,7 @@ body {
 
 .section-features .item:nth-child(4)::before {
   background-image: url(../images/astronaut1.svg);
-}
+}*/
 
 .section-features .item + .item {
   margin-left: 30px;
@@ -445,6 +490,38 @@ body {
   margin-bottom: 0;
   align-items: center;
 }*/
+
+.logo-one {
+  width: 44px;
+  height: 49px;
+  stroke: AFB1B8;
+  stroke-width: 170px;
+}
+
+.logo-two {
+  width: 40px;
+  height: 52px;
+}
+
+.logo-three {
+  width: 41px;
+  height: 42px;
+}
+
+.logo-four {
+  width: 79px;
+  height: 42px;
+}
+
+.logo-five {
+  width: 59px;
+  height: 47px;
+}
+
+.logo-six {
+  width: 88px;
+  height: 45px;
+}
 
 .section-list .item + .item {
   margin-left: 30px;
