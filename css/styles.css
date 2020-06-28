@@ -162,6 +162,8 @@ body {
   fill: var(--button-background-links-color);
 }
 .site-contacts .link {
+  display: inline-flex;
+  align-items: center;
   font-style: normal;
   font-weight: 500;
   line-height: 1.14;
