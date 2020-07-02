@@ -652,32 +652,35 @@ body {
 
 .icon-item {
   margin-top: 30px;
+  min-width: 44px;
 }
+
 .insta {
-  width: 30px;
-  height: 30px;
   fill: #afb1b8;
 }
 
 .insta:hover {
   fill: var(--button-background-links-color);
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
+  border: none;
 }
 
 .twitter {
-  width: 30px;
-  height: 30px;
   margin-left: 22px;
   fill: #afb1b8;
 }
 
 .twitter:hover {
   fill: var(--button-background-links-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
 }
 
 .facebook {
-  width: 30px;
-  height: 30px;
   margin-left: 22px;
   fill: #afb1b8;
 }
@@ -687,14 +690,16 @@ body {
 }
 
 .linkedin {
-  width: 30px;
-  height: 30px;
   margin-left: 22px;
   fill: #afb1b8;
 }
 
 .linkedin:hover {
   fill: var(--button-background-links-color);
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 }
 /*.icon .facebook::before {
   content: "";
@@ -713,12 +718,19 @@ body {
 
 .social-links {
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 }
 
-.icon .social-links:hover,
+/*.icon .social-links:hover,
 .icon .social-links:focus {
   color: var(--button-background-links-color);
-}
+}*/
 
 .position {
   font-size: 16px;
