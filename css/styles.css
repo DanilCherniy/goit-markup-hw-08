@@ -157,10 +157,19 @@ body {
   fill: #757575;
 }
 
-.phones:hover,
-.mails:hover {
+.site-contacts .link:hover .phones {
   fill: var(--button-background-links-color);
 }
+
+.site-contacts .link:hover .mails {
+  fill: var(--button-background-links-color);
+}
+
+/*.phones:hover,
+.mails:hover {
+  fill: var(--button-background-links-color);
+}*/
+
 .site-contacts .link {
   display: inline-flex;
   align-items: center;
@@ -350,9 +359,7 @@ body {
 
 .hero {
   text-align: center;
-
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
@@ -454,7 +461,7 @@ body {
   width: 270px;
   height: 120px;
   padding-top: 17px;
-  pading-bottom: 33px;
+  padding-bottom: 33px;
 }
 
 .antena {
@@ -523,14 +530,38 @@ body {
   fill: #afb1b8;
 }
 
-.logo-one:hover,
+.section-list .link:hover .logo-one {
+  fill: var(--button-background-links-color);
+}
+
+.section-list .link:hover .logo-two {
+  fill: var(--button-background-links-color);
+}
+
+.section-list .link:hover .logo-three {
+  fill: var(--button-background-links-color);
+}
+
+.section-list .link:hover .logo-four {
+  fill: var(--button-background-links-color);
+}
+
+.section-list .link:hover .logo-five {
+  fill: var(--button-background-links-color);
+}
+
+.section-list .link:hover .logo-six {
+  fill: var(--button-background-links-color);
+}
+
+/*.logo-one:hover,
 .logo-two:hover,
 .logo-three:hover,
 .logo-four:hover,
 .logo-five:hover,
 .logo-six:hover {
   fill: var(--button-background-links-color);
-}
+}*/
 
 .logo-two {
   width: 40px;
@@ -660,11 +691,9 @@ body {
 }
 
 .insta:hover {
-  fill: var(--button-background-links-color);
-  width: 44px;
-  height: 44px;
+  fill: #fff;
+  background-color: var(--button-background-links-color);
   border-radius: 50%;
-  border: none;
 }
 
 .twitter {
@@ -673,11 +702,8 @@ body {
 }
 
 .twitter:hover {
-  fill: var(--button-background-links-color);
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  border: none;
+  fill: #fff;
+  background-color: var(--button-background-links-color);
 }
 
 .facebook {
@@ -686,7 +712,8 @@ body {
 }
 
 .facebook:hover {
-  fill: var(--button-background-links-color);
+  fill: #fff;
+  background-color: var(--button-background-links-color);
 }
 
 .linkedin {
@@ -695,11 +722,8 @@ body {
 }
 
 .linkedin:hover {
-  fill: var(--button-background-links-color);
-  border: none;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+  fill: #fff;
+  background-color: var(--button-background-links-color);
 }
 /*.icon .facebook::before {
   content: "";
@@ -725,12 +749,8 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  color: var(--social-links-prime-color);
 }
-
-/*.icon .social-links:hover,
-.icon .social-links:focus {
-  color: var(--button-background-links-color);
-}*/
 
 .position {
   font-size: 16px;
@@ -889,4 +909,27 @@ footer {
 
 .subtitle-container {
   padding: 20px 24px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  margin: 0;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: teal;
+  color: #ffffff;
+}
+
+.btn::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  margin-right: 5px;
+}
+
+.btn:hover {
+  background-color: brown;
 }
