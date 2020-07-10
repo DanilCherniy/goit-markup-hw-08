@@ -961,52 +961,82 @@ footer {
 
 .subtitle-container {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 
-.btn {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  border: none;
-  margin: 0;
-  padding: 10px 30px;
-  border-radius: 5px;
-  background-color: teal;
-  color: #ffffff;
-  overflow: hidden;
-  transition: background-color 500ms cubic-bezier(0.4, 0.2, 0, 1);
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn::before {
-  overflow: hidden;
-  transform: translateX(78px);
+.modal {
+  position: absolute;
+  display: block;
   top: 50%;
-  content: "";
-  width: 20px;
-  height: 20px;
-  background-color: red;
-  margin-right: 5px;
-  transition: transform 500ms cubic-bezier(0.4, 0.2, 0, 1);
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 528px;
+  height: 581px;
+  padding: 40px;
+  text-align: center;
+  background-color: #ffffff;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
-.btn::after {
-  transform: translateY(calc(-50% + 30px));
-  content: "";
-  width: 20px;
-  height: 20px;
-  background-color: black;
-  transition: transform 500ms cubic-bezier(0.4, 0.2, 0, 1);
-  overflow: hidden;
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.5);
 }
 
-.btn:hover::before {
-  transform: translateY(-);
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
-.btn:hover::after {
-  transform: translateY(-50%);
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--headers-names-links-color);
 }
 
-.btn:hover {
-  background-color: brown;
+.button-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #000000;
+}
+
+.button-close:hover,
+.button-close:focus {
+  color: var(--button-background-links-color);
+}
+
+.icon-close {
+  fill: currentColor;
+}
+
+.form {
+  margin-top: 30px;
+}
+
+.form .button.primary {
+  margin-top: 30px;
 }
