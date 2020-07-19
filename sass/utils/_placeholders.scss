@@ -1,0 +1,15 @@
+%body-fontstyle {
+  font-family: $font-family-roboto;
+  font-style: normal;
+  font-weight: $font-weight-normal;
+  font-size: $font-size-main;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+%container {
+  margin: 0 auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}

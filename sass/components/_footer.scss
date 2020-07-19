@@ -1,0 +1,83 @@
+footer {
+  background: #2f303a;
+}
+
+.container-address {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  min-width: 69px;
+  padding-top: 45px;
+  padding-bottom: 28px;
+}
+
+.address-box {
+  margin-top: 8px;
+}
+
+.address-links {
+  font-style: normal;
+  line-height: 1.71;
+  list-style-type: none;
+  text-decoration: none;
+  text-align: start;
+
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+
+  & .link {
+    text-decoration: none;
+    color: $footer-contacts-color;
+  }
+}
+
+.address-item:not(:first-child) {
+  margin-top: 9px;
+}
+
+.address {
+  text-decoration: none;
+  color: $bg-color;
+}
+
+.container-social {
+  min-width: 206px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 57px;
+  margin-left: 69px;
+}
+
+.container-form {
+  margin-right: 0;
+  margin-left: 94px;
+  min-width: 570px;
+  padding-top: 57px;
+}
+
+.footer-text {
+  display: block;
+  font-weight: $font-weight-bold;
+  line-height: 1.14;
+  text-align: left;
+  text-transform: uppercase;
+  color: $bg-color;
+}
+
+.footer-form {
+  margin-top: 20px;
+}
+
+.footer-form-input {
+  width: 358px;
+  height: 50px;
+  font-size: $font-size-subtitle;
+  line-height: 1.25;
+  padding: 15px 16px;
+  background-color: transparent;
+  color: $footer-contacts-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}

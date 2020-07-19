@@ -1,0 +1,7 @@
+body {
+  @extend %body-fontstyle;
+}
+
+body.modal-open {
+  overflow: hidden;
+}

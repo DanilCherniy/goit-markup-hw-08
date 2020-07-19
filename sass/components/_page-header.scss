@@ -1,0 +1,45 @@
+.page-header {
+  position: fixed;
+  top: 0;
+  background-color: $bg-color;
+  width: 100%;
+  z-index: 10;
+}
+
+.header-address {
+  margin-left: auto;
+}
+
+.site-contacts {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+
+  & > .item:not(:first-child) {
+    margin-left: 30px;
+  }
+
+  .link {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: $font-weight-semi-bold;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $font-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .link:hover,
+  .link:focus {
+    color: $accent-color;
+  }
+}
+
+.header-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
