@@ -9,7 +9,7 @@
   padding: 40px;
   text-align: center;
   background-color: #ffffff;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform $transition-for-animation;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
@@ -38,8 +38,8 @@
   letter-spacing: 0.01em;
   transform: translate(0, 0);
   color: $font-color;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform $transition-for-animation,
+    font-size $transition-for-animation;
 }
 
 .comment-input {
@@ -102,9 +102,8 @@
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: $font-color;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform $transition-for-animation,
+    color $transition-for-animation, font-size $transition-for-animation;
 }
 
 .icon-modal {
@@ -115,7 +114,7 @@
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color $transition-for-animation;
 }
 
 .modal-svg {
@@ -151,7 +150,7 @@
     background-color: $accent-color;
     border: 2px solid $accent-color;
     border-radius: 2px;
-    background-image: url(../images/icon-modal-check.svg);
+    background-image: url(../images/checkbox.svg);
     background-size: contain;
     background-origin: border-box;
   }

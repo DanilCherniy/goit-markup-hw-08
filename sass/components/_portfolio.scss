@@ -18,7 +18,7 @@
     margin-top: 0;
     margin-bottom: 0;
     display: block;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform $transition-for-animation;
     transform: translateY(110%);
     background-color: rgba(33, 150, 243, 0.9);
   }
@@ -67,7 +67,7 @@
 .portfolio-link {
   text-decoration: none;
   display: block;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow $transition-for-animation;
 
   &:hover,
   &:focus {
