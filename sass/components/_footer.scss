@@ -3,16 +3,18 @@ footer {
 }
 
 .container-address {
-  display: flex;
-  flex-direction: column;
-  text-align: start;
+  text-align: center;
   min-width: 69px;
-  padding-top: 45px;
-  padding-bottom: 28px;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+  }
 }
 
 .address-box {
-  margin-top: 8px;
+  margin-top: 20px;
 }
 
 .address-links {
@@ -20,11 +22,15 @@ footer {
   line-height: 1.71;
   list-style-type: none;
   text-decoration: none;
-  text-align: start;
+  text-align: center;
 
   padding-left: 0;
   margin-bottom: 0;
   margin-top: 0;
+
+  @media screen and (min-width: $desktop) {
+    text-align: start;
+  }
 
   & .link {
     text-decoration: none;
@@ -33,7 +39,7 @@ footer {
 }
 
 .address-item:not(:first-child) {
-  margin-top: 9px;
+  margin-top: 8px;
 }
 
 .address {
@@ -43,34 +49,58 @@ footer {
 
 .container-social {
   min-width: 206px;
-  display: flex;
-  flex-direction: column;
-  padding-top: 57px;
-  margin-left: 69px;
+  margin-top: 60px;
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .container-form {
-  margin-right: 0;
-  margin-left: 94px;
-  min-width: 570px;
-  padding-top: 57px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 60px;
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 0;
+    margin-left: 0;
+    min-width: 570px;
+    padding-top: 0;
+  }
 }
 
 .footer-text {
   display: block;
   font-weight: $font-weight-bold;
   line-height: 1.14;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
   color: $bg-color;
+
+  @media screen and(min-width: $desktop) {
+    text-align: left;
+  }
 }
 
 .footer-form {
   margin-top: 20px;
+  text-align: center;
+
+  @media screen and(min-width: $tablet) {
+    text-align: center;
+  }
+
+  @media screen and(min-width: $desktop) {
+    text-align: start;
+  }
 }
 
 .footer-form-input {
-  width: 358px;
   height: 50px;
   font-size: $font-size-subtitle;
   line-height: 1.25;
@@ -80,4 +110,31 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  @media screen and(max-width: $tablet) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  @media screen and(min-width: $mobile) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and(min-width: $tablet) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+  }
+
+  @media screen and(min-width: $desktop) {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+    width: 358px;
+  }
 }

@@ -1,32 +1,56 @@
 .header-nav {
-  display: flex;
+  // display: flex;
   align-items: center;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .site-navigation {
   list-style-type: none;
-  margin-left: 85px;
+  text-align: center;
+  // margin-left: 85px;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-  display: flex;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
 
   .item:not(:first-child) {
-    margin-left: 50px;
+    @media screen and (max-width: $tablet) {
+      margin-top: 40px;
+    }
+    @media screen and (min-width: $tablet) {
+      margin-left: 50px;
+    }
   }
 
   .link {
     position: relative;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    display: block;
 
+    display: inline-block;
+    font-size: $font-size-description;
     font-weight: $font-weight-semi-bold;
-    line-height: 1.14;
+    line-height: 1.16;
     letter-spacing: 0.02em;
     text-decoration: none;
     color: $links-color;
     transition: color $transition-for-animation;
+
+    @media screen and (max-width: $tablet) {
+      padding-bottom: 8px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      font-size: $font-size-main;
+      line-height: 1.14;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
   }
 
   .link:hover,
@@ -35,7 +59,7 @@
   }
 
   .current::after {
-    content: "";
+    content: '';
     position: absolute;
     display: inline-block;
     bottom: 0;

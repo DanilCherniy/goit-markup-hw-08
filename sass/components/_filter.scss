@@ -1,16 +1,33 @@
 .filter {
   display: flex;
   justify-content: center;
-  min-width: 611px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
   list-style: none;
   align-items: center;
   padding-left: 0;
   margin-top: 0;
+
+  @media screen and (max-width: $desktop) {
+    min-width: 362px;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    min-width: 611px;
+    justify-content: center;
+  }
 }
 
-.filter-items:not(:first-child) {
-  margin-left: 8px;
+.filter-thumb {
+  margin: -4px;
+}
+
+.filter-items {
+  margin: 4px;
 }

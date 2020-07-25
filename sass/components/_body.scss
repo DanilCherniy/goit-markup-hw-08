@@ -1,7 +1,12 @@
 body {
   @extend %body-fontstyle;
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
-body.modal-open {
-  overflow: hidden;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }

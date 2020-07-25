@@ -14,11 +14,18 @@
   <!-- Шапка страницы с навигацией-->
   <header class="page-header">
     <div class="container header">
-      <nav class="header-nav">
         <a class="logo" href="./index.html">
           Web
           <span class="in-header">Studio</span>
         </a>
+        <button data-menu-button type="button" class="menu-button" aria-expanded="false" aria-controls="header-menu">
+          <svg width="20" height="20" aria-label="Переключатель на мобильное меню">
+            <use class="menu-icon-close" href="./images-hw8/close_mod2.svg"></use>
+            <use class="menu-icon" href="./images-hw8/burger.svg"></use>
+          </svg>
+        </button>
+        <div data-menu class="header-menu" id="header-menu"></div>
+        <nav class="header-nav">
         <ul class="site-navigation">
           <li class="item">
             <a href="./index.html" class="link current" aria-current="page">Студия</a>
@@ -51,6 +58,7 @@
           </li>
         </ul>
       </address>
+    </div>
     </div>
   </header>
   <!-- Уникальный контент страницы -->
@@ -125,15 +133,31 @@
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="section-list">
           <li class="work-item">
-            <img class="work-img" src="./images/box1.jpg" alt="коробка1" width="370" />
+            <picture>
+              <source srcset="./images-hw8/box-370.webp 370w, ./images-hw8/box-370@2x.webp 740w" type="image/webp"
+                media="(min-width: 1200px)" />
+              <source srcset="./images-hw8/box-370.jpg 370w, ./images-hw8/box-370@2x.jpg 740w" media="(min-width: 1200px)" />
+            
+              <img class="work-img" src="./images-hw8/box-370.jpg" alt="Десктопные приложения" sizes="(min-width: 1200px) 30vw" />
+            </picture>
             <h3 class="section-subtitle work">Десктопные приложения</h3>
           </li>
           <li class="work-item">
-            <img class="work-img" src="./images/box2.svg" alt="коробка2" width="370" />
+            <picture>
+              <source srcset="./images-hw8/box2-370.webp 370w, ./images-hw8/box2-370@2x.webp 740w" type="image/webp"
+                media="(min-width: 1200px)">
+              <source srcset="./images-hw8/box2-370.jpg 370w, ./images-hw/box2-370@2x.jpg 740w" media="(min-width: 1200px)">
+              <img class="work-img" src="./images-hw8/box2-370.jpg" alt="Мобильные приложения" sizes="(min-width: 1200px) 30vw">
+            </picture>
             <h3 class="section-subtitle work">Мобильные приложения</h3>
           </li>
           <li class="work-item">
-            <img class="work-img" src="./images/box3.svg" alt="коробка3" width="370" />
+            <picture>
+              <source srcset="./images-hw8/box3-370.webp 370w, ./images-hw8/box3-370@2x.webp 740w" type="image/webp"
+                media="(min-width: 1200px)">
+              <source srcset="./images-hw8/box3-370.jpg 370w, ./images-hw/box3-370@2x.jpg 740w" media="(min-width: 1200px)">
+              <img class="work-img" src="./images-hw8/box3-370.jpg" alt="Дизайнерские приложения" sizes="(min-width: 1200px) 30vw">
+            </picture>
             <h3 class="section-subtitle work">Дизайнерские решения</h3>
           </li>
         </ul>
@@ -474,6 +498,7 @@
     </div>
   </footer>
   <script src="./js/modal.js"></script>
+  <script src="/js/menu.js"></script>
 </body>
 
 </html>

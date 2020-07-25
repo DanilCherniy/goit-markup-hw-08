@@ -1,15 +1,28 @@
 .portfolio-list {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
   padding-left: 0;
-  margin-top: 0;
+  margin: -15px;
   margin-bottom: 0;
+
+  @media screen and (max-width: $tablet) {
+    margin-top: 40px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 50px;
+  }
 
   & .description {
     position: absolute;
     top: 0;
     left: 0;
+    height: 100%;
     font-size: $font-size-description;
     line-height: 1.56;
     color: $bg-color;
@@ -18,7 +31,7 @@
     margin-top: 0;
     margin-bottom: 0;
     display: block;
-    transition: transform $transition-for-animation;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(110%);
     background-color: rgba(33, 150, 243, 0.9);
   }
@@ -47,16 +60,14 @@
 .portfolio-item {
   display: flex;
   justify-content: center;
-  width: calc((100% - 2 * 30px) / 3);
-  margin-bottom: 30px;
-  margin-right: 30px;
+  margin: 15px;
 
-  &:nth-child(3n) {
-    margin-right: 0;
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 4 * 15px) / 2);
   }
 
-  &:nth-last-child(-n + 3) {
-    margin-bottom: 0;
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 6 * 15px) / 3);
   }
 }
 
@@ -67,7 +78,7 @@
 .portfolio-link {
   text-decoration: none;
   display: block;
-  transition: box-shadow $transition-for-animation;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {

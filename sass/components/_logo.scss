@@ -2,10 +2,14 @@
   font-family: $font-family-raleway;
   font-style: normal;
   font-weight: $font-weight-bold;
-  font-size: $font-size-logo;
+  font-size: $font-size-logo-mobile;
   line-height: 1.19;
   color: $accent-color;
   text-decoration: none;
+
+  @media screen and (min-width: $desktop) {
+    font-size: $font-size-logo;
+  }
 
   .in-header {
     color: #000000;

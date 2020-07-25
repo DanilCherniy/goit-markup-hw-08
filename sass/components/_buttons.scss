@@ -16,7 +16,11 @@
   background-color: $accent-color;
 
   .footer-form & {
-    margin-left: 12px;
+    margin-top: 20px;
+    @media screen and (min-width: $desktop) {
+     margin-left: 12px; 
+     margin-top: 0;
+    }
   }
 
   .form & {

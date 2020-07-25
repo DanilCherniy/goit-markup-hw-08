@@ -1,22 +1,41 @@
 .modal {
-  position: absolute;
+  position: relative;
   display: block;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  height: 581px;
+  margin: auto;
+  max-width: 450px;
+  height: 609px;
   padding: 40px;
   text-align: center;
   background-color: #ffffff;
-  transition: transform $transition-for-animation;
+
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+
+  @media screen and (max-width: $desktop) {
+    top: 50%;
+    transform: translate(0, -50%) scale(1);
+    transition: transform $transition-for-animation;
+  }
+
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    max-width: 528px;
+    height: 581px;
+    transition: transform $transition-for-animation;
+  }
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.5);
+  @media screen and (max-width: $desktop) {
+    transform: translate(0, -50%) scale(1.5);
+  }
+  @media screen and (min-width: $desktop) {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
 }
 
 .modal-title {
@@ -107,12 +126,12 @@
 }
 
 .icon-modal {
-  display: inline-block;
-  width: 18px;
-  height: 18px;
   position: absolute;
   top: 50%;
   left: 16px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
   transform: translateY(-50%);
   transition: color $transition-for-animation;
 }
@@ -150,7 +169,7 @@
     background-color: $accent-color;
     border: 2px solid $accent-color;
     border-radius: 2px;
-    background-image: url(../images/checkbox.svg);
+    background-image: url(../images/icon-modal-check.svg);
     background-size: contain;
     background-origin: border-box;
   }
@@ -165,6 +184,11 @@
 
 .label-text {
   color: $font-color;
+  font-size: $font-size-small;
+
+  @media screen and (min-width: $desktop) {
+    font-size: $font-size-main;
+  }
 }
 
 .checkbox-link {

@@ -1,9 +1,22 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-  .team-section {
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &.team-section {
     background: $team-bg-color;
+  }
+
+  &.our-work {
+    display: none;
+
+    @media screen and (min-width: $desktop) {
+      display: block;
+    }
   }
 }
 
@@ -25,6 +38,14 @@
   color: $links-color;
   margin-top: 30px;
   margin-bottom: 0;
+  text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    text-align: start;
+  }
+  @media screen and (min-width: $desktop) {
+    text-align: start;
+  }
 }
 
 .features {
@@ -58,16 +79,39 @@
 
 .section-list {
   list-style: none;
-  display: flex;
   padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  align-items: center;
+  // margin-top: 0;
+  // margin-bottom: 0;
+  margin: -15px;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 
   & .item {
-    width: 270px;
     text-align: start;
     display: block;
+    margin: 15px;
+
+    @media screen and (min-width: $tablet) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      width: calc((100% - 4 * 15px) / 2);
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: calc((100% - 8 * 15px) / 4);
+    }
   }
 
   & .work-item {
@@ -75,20 +119,16 @@
     width: 370px;
     text-align: start;
     display: block;
-  }
-
-  & .work-item:not(:first-child) {
-    margin-left: 30px;
-  }
-
-  & .item:not(:first-child) {
-    margin-left: 30px;
+    @media screen and (min-width: $desktop) {
+      width: calc((100% - 6 * 15px) / 3);
+      margin: 15px;
+    }
   }
 
   & .link {
     text-decoration: none;
     display: block;
-    transition: color $transition-for-animation;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   & .link:hover,
@@ -101,31 +141,72 @@
   list-style: none;
   display: flex;
   padding-left: 0;
-  margin-top: 50px;
   margin-bottom: 0;
-  align-items: center;
+  margin: -15px;
+  margin-top: 50px;
 }
 
 .team .section-list {
   list-style: none;
-  display: flex;
   padding-left: 0;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 0;
-  align-items: center;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    margin-top: 50px;
+  }
 }
 
 .clients .section-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   padding-left: 0;
-  margin-top: 50px;
+  margin: -15px;
+  margin-top: 30px;
   margin-bottom: 0;
-  align-items: center;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    margin-top: 50px;
+  }
 }
 
 .work-img {
   display: block;
+}
+
+.for-clients .item {
+  display: block;
+  margin: 15px;
+  width: calc((100% - 4 * 15px) / 2);
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 6 * 15px) / 3);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 12 * 15px) / 6);
+  }
 }
 
 .for-clients .link {
@@ -133,16 +214,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  transition: border-color $transition-for-animation;
-  transition: color $transition-for-animation;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
     border: 1px solid $accent-color;
+  }
+
+  @media screen and (min-width: $mobile) {
+    width: 210px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 170px;
   }
 }
 
@@ -165,6 +257,7 @@
 }
 
 .teams.item {
+  display: block;
   padding-bottom: 24px;
   text-align: center;
   background-color: $bg-color;
@@ -172,14 +265,23 @@
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
+  margin: 15px;
+
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 4 * 15px) / 2);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 8 * 15px) / 4);
+  }
 }
 
 .mate-item {
   min-width: 44px;
-}
-
-.mate-img {
-  display: block;
 }
 
 .position {
@@ -192,17 +294,44 @@
 }
 
 .main-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and (max-width: $desktop) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .icon-container {
   display: block;
-  width: 270px;
+  width: 450px;
   height: 120px;
-  padding: 25px 100px;
   background: $team-bg-color;
   border-radius: 4px;
+
+  @media screen and (max-width: $mobile) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $mobile) {
+    padding: 25px 190px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+    padding: 25px 142px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+    padding: 25px 100px;
+  }
 }
 
 .subtitle-container {
