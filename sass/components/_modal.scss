@@ -50,6 +50,22 @@
   @media screen and (max-width: $tablet-upper) {
     transform: translate(0, -50%) scale(1.5);
   }
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+    transform: translate(-50%, -50vw) scale(1.5);
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) and (orientation: landscape) {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+
   @media screen and (min-width: $desktop) {
     transform: translate(-50%, -50%) scale(1.5);
   }
