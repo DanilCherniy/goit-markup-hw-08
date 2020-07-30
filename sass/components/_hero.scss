@@ -11,7 +11,7 @@
       rgba(47, 48, 58, 0.8),
       rgba(47, 48, 58, 0.8)
     ),
-    url("../images/hero-img-480.jpg");
+    url("../images-hw8/Header-480.jpg");
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -28,7 +28,7 @@
           rgba(47, 48, 58, 0.8),
           rgba(47, 48, 58, 0.8)
         ),
-        url("../images/hero-img-480@2x.jpg");
+        url("../images-hw8/Header-468@2x.jpg");
     }
   }
 
@@ -38,7 +38,7 @@
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url("../images/hero-img-768.jpg");
+      url("../images-hw8/Header-768.jpg");
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (-webkit-min-device-pixel-ratio: 2),
@@ -50,7 +50,7 @@
           rgba(47, 48, 58, 0.8),
           rgba(47, 48, 58, 0.8)
         ),
-        url("../images/hero-img-768@2x.jpg");
+        url("../images-hw8/Header-768@2x.jpg");
     }
   }
 
@@ -60,7 +60,7 @@
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url("../images/hero-img-1600.jpg");
+      url("../images-hw8/header-1600.jpg");
     padding-top: 200px;
     padding-bottom: 200px;
 
@@ -74,7 +74,7 @@
           rgba(47, 48, 58, 0.8),
           rgba(47, 48, 58, 0.8)
         ),
-        url("../images/hero-img-1600@2x.jpg");
+        url("../images-hw8/header@2x.jpg");
     }
   }
 

@@ -12,10 +12,27 @@
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 
-  @media screen and (max-width: $desktop) {
-    top: 50%;
-    transform: translate(0, -50%) scale(1);
+  @media screen and (max-width: $mobile) {
+    top: 50vw;
+    transform: translate(0, -25%) scale(1);
     transition: transform $transition-for-animation;
+  }
+
+  @media screen and (min-width: 481px) {
+    position: absolute;
+    top: 50vw;
+    left: 50%;
+    transform: translate(-50%, -50vw) scale(1);
+  }
+
+  @media screen and(min-width: $tablet) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    max-width: 528px;
+    min-height: 581px;
+    transition: $transition-for-animation;
   }
 
   @media screen and (min-width: $desktop) {
@@ -30,7 +47,7 @@
 }
 
 .backdrop.is-hidden .modal {
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: $tablet-upper) {
     transform: translate(0, -50%) scale(1.5);
   }
   @media screen and (min-width: $desktop) {

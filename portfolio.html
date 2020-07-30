@@ -15,50 +15,74 @@
     <!-- Шапка страницы с навигацией-->
     <header class="page-header">
       <div class="container header">
-        <nav class="header-nav">
-          <a class="logo" href="./index.html">
-            Web
-            <span class="in-header">Studio</span>
-          </a>
-          <ul class="site-navigation">
-            <li class="item">
-              <a href="./index.html" class="link">Студия</a>
-            </li>
-            <li class="item">
-              <a
-                href="./portfolio.html"
-                class="link current"
-                aria-current="page"
-                >Портфолио
-              </a>
-            </li>
-            <li class="item">
-              <a href="" class="link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <address class="header-address">
-          <ul class="site-contacts">
-            <li class="item">
-              <a href="mailto:info@devstudio.com" class="link">
-                <svg class="header-icon" width="16" height="11">
-                  <use href="./images/symbol-defs-second.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="item">
-              <a href="tel:+380961111111" class="link">
-                <svg class="header-icon" width="10" height="15">
-                  <use
-                    href="./images/symbol-defs-second.svg#icon-smartphone"
-                  ></use>
-                </svg>
-                +380961111111
-              </a>
-            </li>
-          </ul>
-        </address>
+        <a class="logo" href="./index.html">
+          Web
+          <span class="in-header">Studio</span>
+        </a>
+        <button
+          data-menu-button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="header-menu"
+        >
+          <svg
+            width="20"
+            height="20"
+            aria-label="Переключатель на мобильное меню"
+          >
+            <use
+              class="menu-icon-close"
+              href="./images-hw8/symbol-defs3.svg#icon-close_mod2"
+            ></use>
+            <use
+              class="menu-icon"
+              href="./images-hw8/symbol-defs3.svg#icon-burger"
+            ></use>
+          </svg>
+        </button>
+        <div data-menu class="header-menu" id="header-menu">
+          <nav class="header-nav">
+            <ul class="site-navigation">
+              <li class="item">
+                <a href="./index.html" class="link">Студия</a>
+              </li>
+              <li class="item">
+                <a
+                  href="./portfolio.html"
+                  class="link current"
+                  aria-current="page"
+                  >Портфолио
+                </a>
+              </li>
+              <li class="item">
+                <a href="" class="link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="header-address">
+            <ul class="site-contacts">
+              <li class="item">
+                <a href="mailto:info@devstudio.com" class="link">
+                  <svg class="header-icon" width="16" height="11">
+                    <use href="./images/symbol-defs-second.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="item">
+                <a href="tel:+380961111111" class="link">
+                  <svg class="header-icon" width="10" height="15">
+                    <use
+                      href="./images/symbol-defs-second.svg#icon-smartphone"
+                    ></use>
+                  </svg>
+                  +380961111111
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
     <!-- Уникальный контент страницы -->
@@ -88,12 +112,59 @@
             <li class="portfolio-item">
               <a class="portfolio-link" href="">
                 <div class="gallery-thumb">
-                  <img
-                    class="gallery-img"
-                    src="./images/img1.jpg"
-                    alt="Первый проект"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images-hw8/project1-370.webp    1x,
+                        ./images-hw8/project1-370@2x.webp 2x
+                      "
+                      type="image/media"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images-hw8/project1-370.jpg    1x,
+                        ./images-hw8/project1-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images-hw8/project1-354.webp    1x,
+                        ./images-hw8/project1-354@2x.webp 2x
+                      "
+                      type="image/media"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images-hw8/project1-354.jpg    1x,
+                        ./images-hw8/project1-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images-hw8/project1-450.webp    1x,
+                        ./images-hw8/project1-450@2x.webp 2x
+                      "
+                      type="image/media"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images-hw8/project1-450.jpg    1x,
+                        ./images-hw8/project1-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="gallery-img"
+                      src="./images-hw8/project1-370.jpg"
+                      alt="first project"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 767px) 90vw"
+                    />
+                  </picture>
                   <p class="description">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -109,12 +180,59 @@
             <li class="portfolio-item">
               <a class="portfolio-link" href="">
                 <div class="gallery-thumb">
-                  <img
-                    class="gallery-img"
-                    src="./images/img2.jpg"
-                    alt="Второй проект"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images-hw8/project2-370.webp    1x,
+                        ./images-hw8/project2-370@2x.webp 2x
+                      "
+                      type="image/media"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images-hw8/project2-370.jpg    1x,
+                        ./images-hw8/project2-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images-hw8/project2-354.webp    1x,
+                        ./images-hw8/project2-354@2x.webp 2x
+                      "
+                      type="image/media"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images-hw8/project2-354.jpg    1x,
+                        ./images-hw8/project2-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images-hw8/project2-450.webp    1x,
+                        ./images-hw8/project2-450@2x.webp 2x
+                      "
+                      type="image/media"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images-hw8/project2-450.jpg    1x,
+                        ./images-hw8/project2-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="gallery-img"
+                      src="./images-hw8/project2-370.jpg"
+                      alt="second project"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 767px) 90vw"
+                    />
+                  </picture>
                   <p class="description">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -130,12 +248,59 @@
             <li class="portfolio-item">
               <a class="portfolio-link" href="">
                 <div class="gallery-thumb">
-                  <img
-                    class="gallery-img"
-                    src="./images/img3.jpg"
-                    alt="Третий проект"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images-hw8/project3-370.webp    1x,
+                        ./images-hw8/project3-370@2x.webp 2x
+                      "
+                      type="image/media"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images-hw8/project3-370.jpg    1x,
+                        ./images-hw8/project3-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images-hw8/project3-354.webp    1x,
+                        ./images-hw8/project3-354@2x.webp 2x
+                      "
+                      type="image/media"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images-hw8/project3-354.jpg    1x,
+                        ./images-hw8/project3-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images-hw8/project3-450.webp    1x,
+                        ./images-hw8/project3-450@2x.webp 2x
+                      "
+                      type="image/media"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images-hw8/project3-450.jpg    1x,
+                        ./images-hw8/project3-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="gallery-img"
+                      src="./images-hw8/project3-370.jpg"
+                      alt="third project"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 767px) 90vw"
+                    />
+                  </picture>
                   <p class="description">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -151,12 +316,59 @@
             <li class="portfolio-item">
               <a class="portfolio-link" href="">
                 <div class="gallery-thumb">
-                  <img
-                    class="gallery-img"
-                    src="./images/img4.jpg"
-                    alt="Четвертый проект"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images-hw8/project4-370.webp    1x,
+                        ./images-hw8/project4-370@2x.webp 2x
+                      "
+                      type="image/media"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images-hw8/project4-370.jpg    1x,
+                        ./images-hw8/project4-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images-hw8/project4-354.webp    1x,
+                        ./images-hw8/project4-354@2x.webp 2x
+                      "
+                      type="image/media"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images-hw8/project4-354.jpg    1x,
+                        ./images-hw8/project4-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images-hw8/project4-450.webp    1x,
+                        ./images-hw8/project4-450@2x.webp 2x
+                      "
+                      type="image/media"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images-hw8/project4-450.jpg    1x,
+                        ./images-hw8/project4-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="gallery-img"
+                      src="./images-hw8/project4-370.jpg"
+                      alt="fourth project"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 767px) 90vw"
+                    />
+                  </picture>
                   <p class="description">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -360,5 +572,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
